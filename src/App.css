@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background: #f5f5f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbarr nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: orange;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.navbarr nav .title {
+  list-style: none;
+}
+.navbarr nav .title a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Add a new friend */
+.upload-form {
+  width: 400px;
+  height: 540px;
+  border: 5px solid orange;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.upload-form .form-group {
+  width: 100%;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+#photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #595a5a;
+}
+
+#uploadBtn {
+  width: 100%;
+  height: 50px;
+  line-height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  bottom: -5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f5f5f5;
+}
+
+.profile-pic {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.gender label,
+.gender input {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.upload-form .form-group .name,
+.gender,
+.country,
+.mobile_number {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.css-1nrlq1o-MuiFormControl-root {
+  width: 225px;
+}
+
+.country_selection {
+  width: 228px;
+}
+
+.PhoneInputInput {
+  width: 190px;
+  margin: 15px 0;
+}
+
+.menuIcon {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  font-size: 24px;
+  display: none;
+}
+
+.links div {
+  display: flex;
+}
+
+.links div li {
+  margin-right: 20px;
+}
+.links {
+  margin-left: auto !important;
+  display: flex;
+  margin-right: 20px;
+  list-style: none;
+}
+
+.showMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  max-height: 250px;
+  background-color: orange;
+  left: 0;
+  top: 56px;
+  border-top: 1px solid #fff;
+}
+
+.showMenu div {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.css-14epxft-MuiPaper-root {
+  margin: 30px auto;
+  height: 75vh;
+}
+
+@media screen and (max-width: 576px) {
+  /* Dropdown and Menu icon part */
+  .menuIcon {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px !important;
+    margin-left: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .links {
+    display: none;
+  }
+
+  .css-14epxft-MuiPaper-root {
+    margin-top: 120px !important;
+    height: 50vh;
+  }
+
+  .already-link {
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  .upload-form {
+    width: 300px;
+    margin-top: 70px;
+    margin-bottom: 30px;
   }
 }
