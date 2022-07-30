@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/MyFriendsApp/static/css/main.7b37754e.css",
+    "main.js": "/MyFriendsApp/static/js/main.74fcf2ed.js",
+    "static/js/787.28cb0dcd.chunk.js": "/MyFriendsApp/static/js/787.28cb0dcd.chunk.js",
+    "static/media/flags@2x.png": "/MyFriendsApp/static/media/flags@2x.1ff49fd4eddddb2bde9f.png",
+    "static/media/flags.png": "/MyFriendsApp/static/media/flags.3f9d4c2eaac6057ce601.png",
+    "index.html": "/MyFriendsApp/index.html",
+    "main.7b37754e.css.map": "/MyFriendsApp/static/css/main.7b37754e.css.map",
+    "main.74fcf2ed.js.map": "/MyFriendsApp/static/js/main.74fcf2ed.js.map",
+    "787.28cb0dcd.chunk.js.map": "/MyFriendsApp/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b37754e.css",
+    "static/js/main.74fcf2ed.js"
+  ]
+}
